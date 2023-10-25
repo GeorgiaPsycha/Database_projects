@@ -1,0 +1,8 @@
+-- ratings per user 
+
+select distinct userid , count(rating)
+from ratings
+group by userid
+order by userid;
+
+
